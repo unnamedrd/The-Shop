@@ -1,20 +1,49 @@
-# The Shop
+
+
+![1](https://user-images.githubusercontent.com/93551062/146629660-2ae7c979-dfbd-460f-a8fa-694595761abd.jpg)
+
+
+
+
+## Table of contents
+1. [Overview](#overview)
+2. [Process](#process)
+    1. [Design](#design)
+       1. [Requirements](#requirements)
+    3. [Build](#build)
+        1. [Tech Stack](#stack)
+        2. [Project Requirements](#requirements)
+        3. [Installation](#installation)
+        4. [User Journey](#userjourney)
+5. [PostProject Wrap-up](#post)
+    1. [Learnings](#learnings)
+    2. [Known Bugs](#bugs)
+    3. [Next Features](#features)
+    4. [How to Contribute](#contribute)
+    5. [License](#license)
+7. [Acknowledgements](#ack)
 
 ## PURPOSE
-### Overview: The shop is a full stack ecommerce site for submissin to the Winter 2021 Mongo DB Hackathon. 
+### Overview  <a name="overview"></a>: The shop is a full stack ecommerce site for submissin to the Winter 2021 Mongo DB Hackathon. 
 
-The live site is here: https:// [insert link to live site]
+Please refer to the demo for sample output. 
+The live site/demo is here: https:// [insert link to live site]
 
 **Project Timeline : 1 month** 
 
 **Project Status: MVP in Progress**
 
-## PROCESS
-## Design 
+
+## PROCESS <a name="process"></a>
+## Design <a name="design"></a>
 
 [Insert Design files if you have them; Figma, Sketch, PDF Design System]
 
+![2](https://user-images.githubusercontent.com/93551062/146629432-31e6f080-269e-458b-8628-fdaf00ef7b1d.jpg)
 
+
+
+#### Project Requirements:  <a name="requirements"></a>
 
 MVP Features 
 - Browse Product Page
@@ -29,25 +58,19 @@ Extra
 
 
 
-## Build
+## Build <a name="build"></a>
 
 
 
-#### Tech Stack 
+#### Tech Stack <a name="stack"></a>
 
 | Front-End | Back-End | Deploy |
 | --- | --- | --- |
  | ReactJS, HTML, CSS | Node, MongoDB | Netlify |
 
 
-#### Concepts/Tools to explore and practice: 
 
-- Neumorphism but keep an eye on accesiblity 
-- Responsive Design
-- Greensock Animation 
-
-
-##### *User Journey*
+##### *User Journey* <a name="journey"></a>
 - User lands on page  
 - User browses product selection either by scroll or using menus
 - User selects product to add to cart
@@ -57,30 +80,36 @@ Extra
         - * Checks out as guest
         
 - User fills out form
-- Etc
 
 
-## Post Project Wrap Up
+#### Installation <a name="installation"></a>
+
+In order to run the program please do the following:
 
 
-#### Learnings from Project:
-
-1.) How to use 
-2.) Allow ample time for testing and debugging. 
+## Post Project Wrap Up <a name="post"></a>
 
 
+#### Learnings from Project:<a name="learnings"></a>
 
-#### Known Bugs
+I learned to allow ample time for debuggin because of x,y,z. 
+
+
+
+#### Known Bugs <a name="bugs"></a>
 - [ ] This features needs work
 - [ ] So does this one
 
 
-#### Additional Features for future Development
+#### Additional Features for future Development <a name="features"></a>
 - [ ] Dope feature #1
 - [ ] Dope feature #2 
 
+#### How to Contribute <a name="Contribute"></a>
 
-## Acknowledgements 
+#### License <a name="license"></a>
+
+## Acknowledgements <a name="ack"></a>
 
 The following tutorials were utilized in creating some of the features of this project. 
 Thanks to the Content Creators/Teachers
