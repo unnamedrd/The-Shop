@@ -3,10 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>The Shop E-commerce</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/46ad77d0fe.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    
+
+    <div class="header">
+         <div class="headerSection">
+            <h3 class="title">The Shop</h3>
+         </div>
+
+         <div class="headerSection">
+            <ul>
+                <li>Style Edit</li>
+                <li>Products</li>
+                <li>Our Story</li>
+            </ul>
+         </div>
+
+         <div class="headerSection">
+            <i class="fas fa-search"></i>
+            <i class="far fa-heart"></i>
+            <i class="fas fa-shopping-bag" id="cart"></i>
+           
+         </div>
+
+    </div>
+   
+    <div class="hero">
+        <div class="mainTitleSec">
+            <h1 class="headerMain">Spring 2022</h1>
+            <p>shop the collection</p>
+            <img src="https://img.icons8.com/ios/100/000000/long-arrow-right.png"/>
+        </div>
+     
+        <div class="mainImagesSec">
+            <img src="Assets/elephant-earrings.jpg" alt="">
+            <img src="Assets/bangle-bracelet-with-feathers.jpg" alt="">
+            <img src="Assets/pretty-gold-necklace.jpg" alt="">
+            <img src="Assets/gold-arrow-bracelet.jpg" alt="">
+        </div>
+    </div>
+
+
+      <!--SideBar Menu-->
+
+      <aside class ="sidebar">
+        <div class="cartTitle">
+            <i class="fas fa-times" id="closeButton"></i>
+            <h1>Items in Your Cart</h1>
+        </div>
+      
+        <div class="productContainer">
+            <div class="productHeader">
+                <h5 class="productTitle">Product</h5>
+                <h5 class="price">Price</h5>
+                <h5 class="quantity">Quantity</h5>
+                <h5 class="total">Total</h5>
+            </div>
+        </div>
+    </aside>
+
+    <script src="app.js"></script>
 </body>
 </html>
