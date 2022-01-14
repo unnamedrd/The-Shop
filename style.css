@@ -188,3 +188,15 @@ img{
   .price{
       width: 15%;
   }
+
+  /*Product Category*/
+  .styleEditGrid{
+      width: 100vw;
+      height: 40vh;
+      display: grid; 
+
+  }
+
+  .styleEditTitle{
+      
+  }
