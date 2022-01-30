@@ -189,14 +189,54 @@ img{
       width: 15%;
   }
 
-  /*Product Category*/
+  /*Style Edit*/
   .styleEditGrid{
       width: 100vw;
       height: 40vh;
+      background-color: var(--clr-light);
       display: grid; 
+      grid-template-columns: repeat(5, 1fr);
 
   }
 
   .styleEditTitle{
+      color: var(--clr-accent3);
+      font-weight: var(--fw-extrabold)
       
   }
+
+  #Img1{
+      height: 25vh;
+      grid-row-start: 1;
+      grid-row-end: 2;
+  }
+
+  #Img2{
+    height: 25vh;
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+#Img3{
+    height: 25vh;
+   
+}
+
+#Img4{
+    height: 25vh;
+    
+}
+
+ /*Product Category*/
+
+ #productSection{
+    margin-left: 5%;
+    margin-top: 5%;
+ }
+
+ .addToCart{
+     width: 140px;
+     height: 23px;
+     border: 2px solid var(--clr-dark);
+     background-color: var(--clr-accent4);
+ }
