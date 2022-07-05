@@ -234,6 +234,10 @@ img{
     margin-top: 5%;
  }
 
+ .products{
+     height: 30vh;
+ }
+
  .addToCart{
      width: 140px;
      height: 23px;
