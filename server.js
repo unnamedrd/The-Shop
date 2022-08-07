@@ -7,6 +7,11 @@ require('dotenv').config()
 
 const MongoClient = require('mongodb').MongoClient
 
-let connectionString = process.env.DB_STRING; 
+let db,
+    dbconnectionString = process.env.DB_STRING,
+    dbName = 'the-shop-inventory'; 
 
 app.use(cors())
+
+//get statement with main page 
+//listen for the server and console.log port 
