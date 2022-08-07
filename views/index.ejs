@@ -64,6 +64,19 @@
                 <h5 class="total">Total</h5>
             </div>
         </div>
+
+        <section>
+            <h2>Current Inventory</h2>
+            <ul class ="jewelry">
+                <% for(let i=0; i< info.length; i++)
+                    {%>
+                          <li class='jewelryItems'>
+                              <span><%=info[i] %></span>
+                          </li>
+                    <%}
+                %>
+            </ul>
+        </section>
     </aside>
 
     <!--Shop by Category Section -->

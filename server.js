@@ -30,7 +30,13 @@ app.use(express.json()) //converts to json
 //CRUD methods in order
 app.get('/', (request, response) => {
     let contents = db.collection('summer22-collection').find().toArray()
-    console.log(contents)
+        .then(data => {
+            let jewelryList = data.map(item => item.name)
+            console.log(jewelryList), 
+                 response.render('index.ejs', {info:jewelryList})
+        })
+    .catch(error => console.log(error))
+   
 })
 
 app.post('/api', (request, response) => {
