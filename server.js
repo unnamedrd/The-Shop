@@ -1,7 +1,8 @@
 const express = require('express')
 const app = express()
 const MongoClient = require("mongodb").MongoClient;
-const cors = require('cors')
+const cors = require('cors');
+const { request } = require('express');
 const PORT = 8080                 //declare variables for dependencies 
 
 require('dotenv').config()
@@ -26,6 +27,25 @@ app.use(express.static('public')) //points to folder
 app.use(express.urlencoded({ extended: true }))
 app.use(express.json()) //converts to json
 
+//CRUD methods in order
+app.get('/', (request, response) => {
+    let contents = db.collection('summer22-collection').find().toArray()
+    console.log(contents)
+})
+
+app.post('/api', (request, response) => {
+    
+})
+
+app.put('/updateEntry', (request, response) => {
+    
+})
+
+app.delete('/deleteEntry', (request, response) => {
+    
+})
+
+//set up localhost on port 
 app.listen(process.env.PORT || PORT, () => {
     console.log(`Server running on port ${PORT}`)
 })
