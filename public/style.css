@@ -78,7 +78,10 @@ ul, li{
     justify-content: space-evenly;
     font-size: var(--fs-h3);
 }
+.jewelryItems span{
+     font-size: var(--fs-body);
 
+}
 i{
    font-size: 2em;
    margin-right: .5em;

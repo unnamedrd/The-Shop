@@ -55,6 +55,7 @@ app.post('/api', (request, response) => {
 })
 
 app.put('/updateEntry', (request, response) => {
+    console.log(request.body)
     
 })
 
