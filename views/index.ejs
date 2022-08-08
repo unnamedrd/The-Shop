@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Shop E-commerce</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/style.css">
     <script src="https://kit.fontawesome.com/46ad77d0fe.js" crossorigin="anonymous"></script>
 </head>
 
@@ -40,10 +40,10 @@
         </div>
      
         <div class="mainImagesSec">
-            <img src="Assets/elephant-earrings.jpg" alt="">
-            <img src="Assets/bangle-bracelet-with-feathers.jpg" alt="">
-            <img src="Assets/pretty-gold-necklace.jpg" alt="">
-            <img src="Assets/gold-arrow-bracelet.jpg" alt="">
+            <img src="../public/Assets/elephant-earrings.jpg" alt="">
+            <img src="../public/Assets/marble-stud-earrings.jpg" alt="">
+            <img src="../public/Assets/pretty-gold-necklace.jpg" alt="">
+            <img src="../public/Assets/gold-arrow-bracelet.jpg" alt="">
         </div>
     </div>
 
@@ -64,6 +64,17 @@
                 <h5 class="total">Total</h5>
             </div>
         </div>
+        <section>
+            <h3>Input Selections Here</h3>
+            <form action="/api" method="POST">
+                <input type="text" placeholder="product" name="name">
+                <input type="text" placeholder="color" name="color">
+                <input type="text" placeholder="type" name="type">
+                <input type="text" placeholder="price" name="price">
+                <button type="submit">ADD TO BAG</button>
+                <button type="button" id="updatebutton">Update Cart</button>
+            </form>
+        </section>
 
         <section>
             <h2>Current Inventory</h2>
@@ -142,6 +153,6 @@
 
          <!--Footer -->
 
-    <script src="app.js"></script>
+    <script src="../public/app.js"></script>
 </body>
 </html>

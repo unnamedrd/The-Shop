@@ -28,6 +28,10 @@ app.use(express.urlencoded({ extended: true }))
 app.use(express.json()) //converts to json
 
 //CRUD methods in order
+
+/*app.get('/style.css', function (req, res) {
+    res.sendFile(__dirname + "/" + 'style.css') 
+})*/
 app.get('/', (request, response) => {
     let contents = db.collection('summer22-collection').find().toArray()
         .then(data => {
@@ -40,7 +44,14 @@ app.get('/', (request, response) => {
 })
 
 app.post('/api', (request, response) => {
-    
+    console.log('post heard')
+    db.collection('summer22-collection').insertOne(
+        request.body
+    )
+        .then(result => {
+            console.log(result)
+            response.redirect('/')
+        })
 })
 
 app.put('/updateEntry', (request, response) => {
