@@ -15,7 +15,7 @@ shopBtn.addEventListener("click", function(){
     sidebar.classList.toggle('showSidebar')
 })
 
-async function update() {
+async function updateEntry() {
     try {
         const response = await fetch('updateEntry', {
             method: 'put', 
