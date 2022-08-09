@@ -76,7 +76,14 @@ app.put('/updateEntry', (request, response) => {
 })
 
 app.delete('/deleteEntry', (request, response) => {
-    
+    db.collection('summer22-collection').deleteOne(
+        {name:request.body.name}
+    )
+        .then(result => {
+            console.log('entry deleted')
+            response.json('entry deleted')
+        })
+    .catch(error => console.error(error))
 })
 
 //set up localhost on port 

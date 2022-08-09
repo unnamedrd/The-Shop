@@ -37,3 +37,20 @@ async function updateEntry() {
         
     }
 }
+
+async function deleteEntry() {
+    const input = document.getElementById('deleteInput')
+    try {
+        const response = await fetch('deleteEntry', {
+            method: 'delete',
+            headers:{'Content-Type': 'application/json'}, 
+            body: JSON.stringify({
+                name:input.value
+            })
+        })
+        const data = await response.json()
+        location.reload()
+    } catch (err) {
+        console.log(err)
+    }
+}
