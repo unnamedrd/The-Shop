@@ -56,6 +56,12 @@ app.post('/api', (request, response) => {
 
 app.put('/updateEntry', (request, response) => {
     console.log(request.body)
+    Object.keys(request.body).forEach(key => {
+        if (request.body[key] == null || request.body[key] === undefined || request.body[key] === "") {
+            delete request.body[key]
+        }
+    })
+  
     
 })
 

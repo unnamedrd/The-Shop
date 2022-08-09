@@ -21,7 +21,7 @@ async function updateEntry() {
             method: 'put', 
             headers: { 'Content-Type': 'application/json' }, 
             body: JSON.stringify({
-                name: document.getElementsByName('name')[9].value, 
+                name: document.getElementsByName('name')[0].value, 
                 type: document.getElementsByName('type')[0].value, 
                 color: document.getElementsByName('color')[0].value, 
                 price: document.getElementsByName('price')[0].value
