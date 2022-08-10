@@ -79,11 +79,15 @@ ul, li{
     font-size: var(--fs-h3);
 }
 
+.jewerly{
+
+    display: flex;
+    flex-direction: column;
+
+}
 .jewelryItems{
-     font-size: 20px;
+     font-size: 10px;
      color: var(--clr-accent5);
-     display: flex;
-     flex-direction: row;
      padding: .5em;
 
 }
@@ -143,6 +147,7 @@ img{
     background-color: antiquewhite;
     transition: all 0.3s linear;
     right: 0;
+    padding-left: 1em;
   }
   
   .sidebar *{
@@ -191,6 +196,10 @@ img{
   .productTitle{
       width: 40%;
       flex-wrap: wrap;
+  }
+
+  .products{
+      display: flex;
   }
   
   .price{
@@ -252,3 +261,10 @@ img{
      border: 2px solid var(--clr-dark);
      background-color: var(--clr-accent4);
  }
+
+.itemLabel{
+    background-color: var(--clr-accent3);
+    /*border: 2px solid black;*/
+    width: 200px;
+    padding: .5em;
+}

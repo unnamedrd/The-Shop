@@ -63,6 +63,16 @@
                 <h5 class="quantity">Quantity</h5>
                 <h5 class="total">Total</h5>
             </div>
+            <ul class ="jewelry">
+                <% for(let i=0; i< info.length; i++)
+                    {%>
+                          <li class='jewelryItems'>
+                              <span><%=info[i] %> </span>
+                        
+                          </li>
+                    <%}
+                %>
+            </ul>
         </div>
         <section>
             <h3>Input Selections Here</h3>
@@ -78,15 +88,7 @@
 
         <section>
             <h2>Current Inventory</h2>
-            <ul class ="jewelry">
-                <% for(let i=0; i< info.length; i++)
-                    {%>
-                          <li class='jewelryItems'>
-                              <span><%=info[i] %></span>
-                          </li>
-                    <%}
-                %>
-            </ul>
+            
         </section>
     </aside>
 
@@ -123,30 +125,80 @@
         <section id = "productSection">
             <div class="products">
                 <h3>Bracelets</h3>
-                <img src="Assets/gold-arrow-bracelet.jpg" alt="" class="productImg">
-                <img src="Assets/stacked-bracelets-set.jpg" alt="" class="productImg">
-                
-                <button class="addToCart">Add to Cart</button>
+                <div class="itemWrapper">
+                    <img src="Assets/gold-arrow-bracelet.jpg" alt="" class="productImg">
+                    <div class="itemLabel">
+                         <h4 class="price">$55.00</h4>
+                        <button class="addToCart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="itemWrapper">
+                    <img src="Assets/stacked-bracelets-set.jpg" alt="" class="productImg">
+                    <div class="itemLabel">
+                        <h4 class="price">$55.00</h4>
+                        <button class="addToCart">Add to Cart</button>
+                    </div>
+                </div>
+               
             </div>
+
             <div class="products">
                 <h3>Arm Bands</h3>
-                <img src="Assets/gold-arrow-bracelet.jpg" alt="" class="productImg">
-                
-                <button class="addToCart">Add to Cart</button>
+                <div class="itemWrapper">
+                    <img src="Assets/gold-arrow-bracelet.jpg" alt="" class="productImg">
+                    <div class="itemLabel">
+                        <h4 class="price">$55.00</h4>
+                        <button class="addToCart">Add to Cart</button>
+                    </div>
+                </div>
+             
+               
             </div>
+
+
             <div class="products">
                 <h3>Earrings</h3>
-                <img src="Assets/marble-stud-earrings.jpg" alt="" class="productImg">
-                <img src="Assets/elephant-earrings.jpg" alt="" class="productImg">
+
+                <div class="itemWrapper">
+                    <img src="Assets/marble-stud-earrings.jpg" alt="" class="productImg">
+                    <div class="itemLabel">
+                        <h4 class="price">$55.00</h4>
+                        <button class="addToCart">Add to Cart</button>
+                    </div>
+                </div>
+
+                 <div class="itemWrapper">
+                    <img src="Assets/elephant-earrings.jpg" alt="" class="productImg">
+                    <div class="itemLabel">
+                          <h4 class="price">$55.00</h4>
+                        <button class="addToCart">Add to Cart</button>
+                    </div>
+                </div>
                
-                <button class="addToCart">Add to Cart</button>
             </div>
+
             <div class="products">
+
                 <h3>Necklaces</h3>
-                <img src="Assets/dainty-gold-necklace.jpg" alt="" class="productImg">
-                <img src="Assets/pretty-gold-necklace.jpg" alt="" class="productImg">
-                <img src="" alt="" class="productImg">
-                <button class="addToCart">Add to Cart</button>
+
+                <div class="itemWrapper">
+                    <img src="Assets/dainty-gold-necklace.jpg"  alt="" class="productImg">
+                    <div class="itemLabel">
+                        <h4 class="price">$55.00</h4>
+                        <button class="addToCart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="itemWrapper">
+                    <img src="Assets/pretty-gold-necklace.jpg" alt="" class="productImg">
+                    <div class="itemLabel">
+                        <h4 class="price">$55.00</h4>
+                        <button class="addToCart">Add to Cart</button>
+                    </div>
+                </div>
+                
+
             </div>
     
         </section>
