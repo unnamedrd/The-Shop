@@ -1,8 +1,11 @@
 let closeBtn = document.querySelector('#closeButton');
 let shopBtn = document.querySelector('#cart')
 let sidebar = document.querySelector('.sidebar')
+let addCart = document.querySelectorAll(".addToCart");
 
 document.getElementById('updateButton').addEventListener('click', updateEntry)
+
+addCart.addEventListener('click', addCart)
 
 
 closeBtn.addEventListener("click", function(){
@@ -15,6 +18,25 @@ shopBtn.addEventListener("click", function(){
     sidebar.classList.toggle('showSidebar')
 })
 
+async function addCart() {
+    try {
+        const response = await fetch("addCart", {
+          method: "put",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            name: document.getElementById("itemName")[0].value,
+            type: document.getElementById("itemType")[0].value,
+            color: document.getElementById("itemColor")[0].value,
+            price: document.getElementById("itemPrice")[0].value
+          }),
+        });
+        const data = await response.json()
+        console.log(data)
+        location.reload()
+    } catch (err) {
+        console.log(err)
+    }
+}
 async function updateEntry() {
     try {
         const response = await fetch('updateEntry', {

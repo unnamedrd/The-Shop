@@ -35,7 +35,7 @@ app.use(express.json()) //converts to json
 app.get('/', (request, response) => {
     let contents = db.collection('summer22-collection').find().toArray()
         .then(data => {
-            let jewelryList = data.map(item => item.name)
+            let jewelryList = data.map(item => item.name, item.price)
             console.log(jewelryList), 
                  response.render('index.ejs', {info:jewelryList})
         })
