@@ -1,11 +1,11 @@
 let closeBtn = document.querySelector('#closeButton');
 let shopBtn = document.querySelector('#cart')
 let sidebar = document.querySelector('.sidebar')
-let addCart = document.querySelectorAll(".addToCart");
+let addCartItem = document.querySelectorAll(".addToCart");
 
 document.getElementById('updateButton').addEventListener('click', updateEntry)
 
-addCart.addEventListener('click', addCart)
+
 
 
 closeBtn.addEventListener("click", function(){
@@ -18,7 +18,14 @@ shopBtn.addEventListener("click", function(){
     sidebar.classList.toggle('showSidebar')
 })
 
+for (let i = 0; i < addCartItem.length; i++){
+addCartItem[i].addEventListener("click", addCart);
+}
+
+
 async function addCart() {
+
+    console.log("the add to card is working")
     try {
         const response = await fetch("addCart", {
           method: "put",
