@@ -279,7 +279,7 @@ img{
 }
 
 .itemWrapper:hover .itemLabel{
-   left: 10%;
+   background-color: var(--clr-accent1);
 }
 
 .itemWrapper{
